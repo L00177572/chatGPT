@@ -4,6 +4,18 @@ provider:
   name: aws
   runtime: nodejs14.x
   region: eu-west-1
+  stage: dev
+  # Add IAM policy to grant Lambda function access to DynamoDB
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action:
+            - dynamodb:Query
+            - dynamodb:GetItem
+            - dynamodb:Scan
+            - dynamodb:BatchGetItem
+          Resource: "*"
 
 resources:
   Resources:

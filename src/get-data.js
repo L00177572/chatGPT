@@ -4,7 +4,7 @@ const dynamodb = new AWS.DynamoDB.DocumentClient();
 exports.handler = async (event) => {
   const params = {
     TableName: 'my-table',
-    Key: { id: 'my-id' }
+    Key: { id: 'my-id', timestamp: 0 }
   };
   const data = await dynamodb.get(params).promise();
   return {
