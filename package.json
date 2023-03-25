@@ -1,0 +1,19 @@
+{
+  "name": "chat-gpt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "export AWS_PROFILE='devOpsAdminLTU' && sls deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/L00177572/chatGPT.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/L00177572/chatGPT/issues"
+  },
+  "homepage": "https://github.com/L00177572/chatGPT#readme"
+}
